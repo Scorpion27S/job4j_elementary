@@ -1,26 +1,23 @@
 package ru.job4j.calculator;
 
 public class Calculator {
-public static void main(String[] args) {
-        byte age = 27;
-        System.out.println(age);
-        char man = 'M';
-        System.out.println(man);
-        char women = 'J';
-        System.out.println(women);
-        float height = 15f;
-        System.out.println(height);
-        short kirpich = 1000;
-        System.out.println(kirpich);
-        double baktery = 1.2345E+21;
-        System.out.println(baktery);
-        double kosmos = 1.6678E+21;
-        System.out.println(kosmos);
-        boolean work = true;
-        System.out.println(work);
-        boolean noWork = false;
-        System.out.println(noWork);
-        long size = 121;
-        System.out.println(size);
+
+    public static int func1(int x) {
+        int y = x * x + 1;
+        return y;
+    }
+
+    public static int func2(int x) {
+        int y = 1 / x;
+        return y;
+    }
+
+    public static void main(String[] args) {
+        int result1 = Calculator.func1(3);
+        int result2 = Calculator.func2(5);
+        int total = result1 + result2;
+        System.out.println(total);
+        int result3 = Calculator.func1(100);
+        System.out.println(result3);
     }
 }
