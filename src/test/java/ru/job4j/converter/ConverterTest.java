@@ -10,15 +10,15 @@ public class ConverterTest {
         float expected = 2;
         float out = (float) Converter.rubleToEuro(in);
         float eps = 0.0001f;
-        assertThat(out).isEqualTo(expected);
+        assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
     @Test
     void whenConvert180RblThen3Dlr() {
-        double in = 180;
-        double expected = 3;
-        double out = Converter.rubleToDollar(in);
-        double eps = 0.0001f;
+        float in = 180;
+        float expected = 3;
+        float out = (float) Converter.rubleToDollar(in);
+        float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 }
