@@ -2,7 +2,7 @@ package ru.job4j.calculator;
 
 import static ru.job4j.math.MathFunction.*;
 
-class MathCalculator {
+public class Calculator {
 
     public static double sumAndMultiply(double first, double second) {
         return sum(first, second)
@@ -14,10 +14,10 @@ class MathCalculator {
                 - delenie(first, second);
     }
 
-public static double sumAndMultiplyAndMinusAndDelenie(double first, double second) {
+    public static double sumAndMultiplyAndMinusAndDelenie(double first, double second) {
         return sumAndMultiply(first, second)
                 + minusAndDelenie(first, second);
-}
+    }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
