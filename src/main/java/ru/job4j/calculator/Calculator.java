@@ -1,23 +1,27 @@
 package ru.job4j.calculator;
 
-public class Calculator {
+import static ru.job4j.math.MathFunction.*;
 
-    public static int func1(int x) {
-        int y = x * x + 1;
-        return y;
+class MathCalculator {
+
+    public static double sumAndMultiply(double first, double second) {
+        return sum(first, second)
+                + multiply(first, second);
     }
 
-    public static int func2(int x) {
-        int y = 1 / x;
-        return y;
+    public static double minusAndDelenie(double first, double second) {
+        return minus(first, second)
+                - delenie(first, second);
     }
+
+public static double sumAndMultiplyAndMinusAndDelenie(double first, double second) {
+        return sumAndMultiply(first, second)
+                + minusAndDelenie(first, second);
+}
 
     public static void main(String[] args) {
-        int result1 = Calculator.func1(3);
-        int result2 = Calculator.func2(5);
-        int total = result1 + result2;
-        System.out.println(total);
-        int result3 = Calculator.func1(100);
-        System.out.println(result3);
+        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета равен: " + minusAndDelenie(20, 10));
+        System.out.println("Результат расчета равен: " + sumAndMultiplyAndMinusAndDelenie(20, 10));
     }
 }
