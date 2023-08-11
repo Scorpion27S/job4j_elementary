@@ -33,46 +33,40 @@ class X2Test {
         int rsl = X2.calc(a, b, c, x);
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
-    }
 
-    static {
-        int a = 0;
-        int b = 1;
-        int c = 1;
-        int x = 1;
+         a = 0;
+         b = 1;
+         c = 1;
+         x = 1;
         /* ожидаемое значение. Это всегда одна переменная. */
-        int expected = 2;
+         expected = 2;
         /* вызов метода, который хотим проверить. */
         /* Результат вычисления. Это всегда одна переменная. */
-        int rsl = X2.calc(a, b, c, x);
+         rsl = X2.calc(a, b, c, x);
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
-    }
 
-    static {
-        int a = 1;
-        int b = 1;
-        int c = 0;
-        int x = 1;
+         a = 1;
+         b = 1;
+         c = 0;
+         x = 1;
         /* ожидаемое значение. Это всегда одна переменная. */
-        int expected = 2;
+         expected = 2;
         /* вызов метода, который хотим проверить. */
         /* Результат вычисления. Это всегда одна переменная. */
-        int rsl = X2.calc(a, b, c, x);
+         rsl = X2.calc(a, b, c, x);
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
-    }
 
-    static {
-        int a = 1;
-        int b = 1;
-        int c = 1;
-        int x = 0;
+         a = 1;
+         b = 1;
+         c = 1;
+         x = 0;
         /* ожидаемое значение. Это всегда одна переменная. */
-        int expected = 1;
+         expected = 1;
         /* вызов метода, который хотим проверить. */
         /* Результат вычисления. Это всегда одна переменная. */
-        int rsl = X2.calc(a, b, c, x);
+         rsl = X2.calc(a, b, c, x);
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
     }
