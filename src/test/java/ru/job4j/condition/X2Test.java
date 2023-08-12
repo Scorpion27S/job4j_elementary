@@ -21,7 +21,7 @@ class X2Test {
         assertThat(rsl).isEqualTo(expected);
     }
 
-    static {
+    {
         int a = 1;
         int b = 1;
         int c = 1;
