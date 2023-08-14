@@ -1,6 +1,7 @@
 package ru.job4j.condition;
 
 import static org.assertj.core.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
 
 class X2Test {
@@ -27,16 +28,16 @@ class X2Test {
         assertThat(rsl).isEqualTo(expected);
     }
 
-        @Test
-        void whenA10B0C0X2Then15() {
-         int a = 0;
-         int b = 1;
-         int c = 1;
-         int x = 1;
-         int expected = 2;
-         int rsl = X2.calc(a, b, c, x);
+    @Test
+    void whenA10B0C0X2Then15() {
+        int a = 0;
+        int b = 1;
+        int c = 1;
+        int x = 1;
+        int expected = 2;
+        int rsl = X2.calc(a, b, c, x);
         assertThat(rsl).isEqualTo(expected);
-}
+    }
 
     @Test
     void whenA10B0C0X2Then111() {
@@ -51,12 +52,12 @@ class X2Test {
 
     @Test
     void proverkaMetoda888() {
-         int a = 1;
-         int b = 1;
-         int c = 1;
-         int x = 0;
-         int expected = 1;
-         int rsl = X2.calc(a, b, c, x);
+        int a = 1;
+        int b = 1;
+        int c = 1;
+        int x = 0;
+        int expected = 1;
+        int rsl = X2.calc(a, b, c, x);
         assertThat(rsl).isEqualTo(expected);
     }
 }
