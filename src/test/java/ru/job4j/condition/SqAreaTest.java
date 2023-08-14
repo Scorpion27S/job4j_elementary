@@ -15,7 +15,7 @@ class SqAreaTest {
     }
 
     @Test
-    void test2() {
+    void whenP12K1Square9() {
         int expected = 9;
         int p = 12;
         double k = 1;
@@ -24,7 +24,7 @@ class SqAreaTest {
     }
 
     @Test
-    void test3() {
+    void whenP9K3Square4() {
         int expected = 4;
         int p = 9;
         double k = 3;
