@@ -8,8 +8,8 @@ class MaxTest {
     void whenMax1To2Then2() {
         int left = 1;
         int right = 2;
-        String result = Max.max(left, right);
-        String expected = "2";
+        int result = Max.max(left, right);
+        int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
 
@@ -17,8 +17,8 @@ class MaxTest {
     void whenMax2To1Then2() {
         int left = 2;
         int right = 1;
-        String result = Max.max(left, right);
-        String expected = "2";
+        int result = Max.max(left, right);
+        int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
 
@@ -26,8 +26,8 @@ class MaxTest {
     void whenMax2To2Then2() {
         int left = 1;
         int right = 2;
-        String result = Max.max(left, right);
-        String expected = "2";
+        int result = Max.max(left, right);
+        int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
 }
