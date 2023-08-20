@@ -24,7 +24,7 @@ class MaxTest {
 
     @Test
     void whenMax2To2Then2() {
-        int left = 1;
+        int left = 2;
         int right = 2;
         int result = Max.max(left, right);
         int expected = 2;
