@@ -2,14 +2,12 @@ package ru.job4j.array;
 
 public class ArrayDefinition {
     public static void main(String[] args) {
-        String[] names = new String[4];
-        names[0] = "Gleb Koklyukhin";
-        names[1] = "Sonya Mayer";
-        names[2] = "Nastya Popova";
-        names[3] = "Sergey Shkilev";
-        System.out.println(names[0]);
-        System.out.println(names[1]);
-        System.out.println(names[2]);
-        System.out.println(names[3]);
+        int[] numbers = new int[5];
+        for (int index = 0; index < numbers.length; index++) {
+            numbers[index] = index * 2 + 3;
+        }
+        for (int index = 0; index < numbers.length; index++) {
+            System.out.println(numbers[index]);
+        }
     }
 }
